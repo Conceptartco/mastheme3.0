@@ -6,19 +6,18 @@
     "repository": "https://github.com/Conceptartco/mastheme3.0",
     "author_email": "naderst2020@gmail.com",
     "features": [
-        "unite-cards-height",
         "component-featured-products",
         "component-fixed-banner",
         "component-fixed-products",
         "component-products-slider",
         "component-photos-slider",
         "component-parallax-background",
-        "component-testimonials",
         "component-square-photos",
         "component-store-features",
         "component-youtube",
         "menu-images",
-        "filters"
+        "filters",
+        "unite-cards-height"
     ],
     "settings": [],
     "components": [
