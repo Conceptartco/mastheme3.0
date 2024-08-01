@@ -1,0 +1,37 @@
+<footer class="store-footer text-3xl pt-5 top-border-footer">
+	<div class="container px-20">
+		<div
+			class="flex flex-col lg:flex-row lg:gap-2">
+			<!-- Logo and description -->
+			<div class="flex flex-col items-center lg:items-start mb-4 lg:mb-0 lg:me-10">
+				<img class="store-logo" src="{{ store.logo }}" alt="{{ store.name }} logo">
+			</div>
+
+			<!-- Store description -->
+			<div class="flex flex-col lg:w-1/4 mb-4 lg:mb-0">
+				<p class="text-xl text-justify">
+					<span class="custom-color">مجوهرات ماس</span>
+					تجسيد للجمال الأزلي والأناقة الفريدة، كل قطعة مصممة بحرفية فائقة، تحمل طابع الأصالة والفخامة. متخصصون في قطع الذهب والألماس منذ عام 1403 هجري.
+				</p>
+			</div>
+
+			<!-- Location and social media -->
+			<div class="flex flex-col mx-10 items-center lg:items-start lg:w-1/4 mb-4 lg:mb-0">
+				<p class="text-base lg:text-xl text-center lg:text-right">السعودية الرياض</p>
+				<p class="text-sm lg:text-lg text-center lg:text-right">الفرع الأول: أسواق طيبة (طريق الملك فهد)</p>
+				<p class="text-sm lg:text-lg text-center lg:text-right">الفرع الثاني: أسواق المجد (مخرج 10)</p>
+				<salla-social class="custom-color"></salla-social>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer bottom row -->
+	<div class="text-center mt-5">
+		<p class="text-sm lg:text-base">
+			&copy;
+			<span class="custom-color">{{ "now"|date("Y") }}</span>
+			<span class="custom-color">{{ store.name }}</span>.
+			<span class="custom-color">جميع الحقوق محفوظة.</span>
+		</p>
+	</div>
+</footer>

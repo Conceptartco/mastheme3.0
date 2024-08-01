@@ -1,0 +1,74 @@
+/* Slider container to handle horizontal scroll */
+.custom-slider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px; /* Space between slides */
+}
+
+
+/* Styling for the link entries */
+.custom-slide-cat-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Container for the images with hover effect */
+.custom-link-image-container {
+    position: relative;
+    width: 20vh; 
+    height: 20vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/* Common styling for images */
+.custom-link-img-before, .custom-link-img-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+}
+
+/* Initial state for hover images */
+.custom-link-img-after {
+    opacity: 0;
+}
+
+/* Hover effect to switch images */
+.custom-slide-cat-entry:hover .custom-link-img-before {
+    opacity: 0;
+}
+
+.custom-slide-cat-entry:hover .custom-link-img-after {
+    opacity: 1;
+}
+
+/* Styling for icons */
+.custom-link-image-container i {
+    font-size: 24px; /* Adjust icon size */
+    line-height: 40px; /* Vertically center icon */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .custom-slider-slide {
+        margin: 0 5px; /* Adjust spacing for smaller screens */
+    }
+
+    .custom-link-image-container {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .custom-link-image-container i {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
